@@ -4,6 +4,7 @@
 
 html,
 body {
+    height: 100%;
     min-height: 100%;
 }
 
@@ -32,8 +33,7 @@ body {
     height: 100%;
 }
 
-.thin-inner,
-#disqus_thread {
+.thin-inner {
     margin: 0 auto;
     max-width: 62.5em;
     padding: 1.25em;
@@ -42,10 +42,6 @@ body {
 
 .thin-inner > *:last-child {
     margin-bottom: 0;
-}
-
-#disqus_thread {
-    padding-top: 0;
 }
 
 
@@ -82,8 +78,7 @@ article {
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 64em) {  /** 992px **/
 
-    .thin-inner,
-    #disqus_thread {
+    .thin-inner {
         padding: 2em;
     }
 
@@ -99,13 +94,8 @@ article {
         padding: 0 1.125em;
     }
 
-    .thin-inner,
-    #disqus_thread {
+    .thin-inner {
         padding: 3em;
-    }
-
-    #disqus_thread {
-        padding-top: 0;
     }
 
 }
