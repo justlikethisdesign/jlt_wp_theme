@@ -48,8 +48,6 @@ if( is_acf_installed() ) {
                 
     include ( 'assets/social_media.php' );
     
-    include ( 'assets/gravity_forms.php' );     
-        
-    include ( 'flexible_content.php' );    
+    include ( 'assets/gravity_forms.php' );      
     
 }
