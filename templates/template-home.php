@@ -12,78 +12,24 @@
 
 get_header(); ?>
 
-<section id="primary">
-    <main id="content" role="main">
+<main id="content" role="main">
 
-        <div class="page-inner-wrap">
+    <?php
 
-            <?php
+    include( locate_template('template-parts/sections/hero.php') );
+    
+    include( locate_template('template-parts/sections/about.php') );
+    
+    include( locate_template('template-parts/sections/icons.php') );
+    
+    include( locate_template('template-parts/sections/casestudy.php') );
+    
+    include( locate_template('template-parts/sections/blog.php') );
+    
+    include( locate_template('template-parts/sections/cta.php') );
 
-            /**
-             * Here we show the home content first
-             **/
+    ?>
 
-            $pad_ajax = '';
-
-            if ( have_posts() ){
-
-                /* Start the Loop */
-                while ( have_posts() ) : the_post();
-
-                    if( !empty_content ($post->post_content) ){
-
-                        $pad_ajax = ' below-text';
-
-                        /* Include the Post-Format-specific template for the content.
-                         * If you want to overload this in a child theme then include a file
-                         * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-                         */
-                        get_template_part( 'template-parts/page/content', 'page-home' );
-
-                    }
-
-                endwhile;
-
-            }
-
-            /**
-             * Now lets get the home loop
-             **/
-
-            $args = array(
-                'category_name' => 'home',
-            );
-
-            query_posts( $args );
-
-            if ( have_posts()  ) {
-                ?>
-
-                <div class="grid-container basic<?php echo $pad_ajax;?>">
-
-                    <!-- modules -->
-                    <?php
-                    while ( have_posts() ) : the_post();
-
-                        get_template_part( 'template-parts/cards/card', 'home' );
-
-                    endwhile
-                    ?>
-
-                </div>
-
-                <?php
-
-            }
-
-            //Clean up post
-            wp_reset_query();
-
-            ?>
-
-        </div>
-
-    </main><!-- #main -->
-</section><!-- #primary -->
+</main><!-- #main -->
 
 <?php get_footer();
