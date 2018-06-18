@@ -7,6 +7,7 @@
 
 @import './abstracts/mixins';
 @import './abstracts/variables';
+@import './abstracts/keyframes';
 @import './abstracts/animations';
 
 @import './base/typography-critical';
@@ -16,3 +17,5 @@
 @import './layouts/header';
 
 @import './components/screen-reader';
+
+@import './layouts/hero';

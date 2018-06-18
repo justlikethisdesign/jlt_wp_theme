@@ -33,32 +33,11 @@ body {
     height: 100%;
 }
 
-.thin-inner {
-    margin: 0 auto;
-    max-width: 62.5em;
-    padding: 1.25em;
-    background-color: #fff;
-}
-
-.thin-inner > *:last-child {
-    margin-bottom: 0;
-}
-
-
 /** This pushes all content to the same center position **/
-.page-inner-wrap,
-.article-inner-wrap {
+.container {
     width: 100%;
     margin: 0 auto;
     position: relative;
-}
-
-.page-inner-wrap {
-    padding: 0 1.125em;
-}
-
-article {
-    background-color: #fff;
 }
 
 /* Extra Small Devices, Phones */
@@ -88,14 +67,9 @@ article {
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 75em) {  /** 1200px **/
 
-    .article-inner-wrap,
-    .page-inner-wrap {
+    .container{
         width: 73em;
         padding: 0 1.125em;
-    }
-
-    .thin-inner {
-        padding: 3em;
     }
 
 }
@@ -104,8 +78,7 @@ article {
 /** IMac **/
 @media only screen and (min-width: 79.375em) {  /** 1270px **/
 
-    .article-inner-wrap,
-    .page-inner-wrap {
+    .container {
         width: 76em;
     }
 
@@ -114,8 +87,7 @@ article {
 
 @media only screen and (min-width: 90em) {
 
-    .article-inner-wrap,
-    .page-inner-wrap {
+    .container {
         width: 86em;
     }
 
@@ -125,9 +97,7 @@ article {
 /** Pauls Screen - No bigger than this! **/
 @media only screen and (min-width: 100em) {  /** 1600px **/
 
-
-    .article-inner-wrap,
-    .page-inner-wrap {
+    .container {
         width: calc( 100% - 2.5em );
         margin: 0 1.125em;
     }
@@ -137,8 +107,7 @@ article {
 /** Round up wrappers **/
 @media only screen and (min-width: 140em) {
 
-    .article-inner-wrap,
-    .page-inner-wrap {
+    .container {
         width: 137.5em;
     }
 

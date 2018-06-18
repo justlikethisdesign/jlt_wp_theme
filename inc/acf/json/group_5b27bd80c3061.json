@@ -387,7 +387,7 @@
                         "post_type"
                     ],
                     "elements": "",
-                    "min": 3,
+                    "min": 0,
                     "max": 6,
                     "return_format": "object"
                 }
@@ -506,5 +506,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1529332156
+    "modified": 1529340759
 }
