@@ -1,0 +1,128 @@
+/** Essentials **/
+/* This file holds essential css that is too short to go anywhere else **/
+/* You know, misc type stuff... just look! */
+
+
+/**  Go to top button  **/
+.toTop {
+	position: fixed !important;
+	right: 0.5em;
+	bottom: -5.625em;
+	display: block;
+	font-size: 1.375em;
+	line-height: 2.1875em;
+	text-align: center;
+	width: 2.5em;
+	height: 2.5em;
+	visibility: hidden;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	z-index: 9999;
+	cursor: pointer;
+    border-radius: 50%;
+}
+
+.toTop.show {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+	visibility: visible;
+	bottom : 3em;
+}
+
+/** Object Fit **/
+.obj-fit.cover,
+img.obj-fit.cover {
+    object-fit: cover;
+    font-family: 'object-fit: cover;';
+}
+
+obj-fit.contain,
+img.obj-fit.contain {
+    object-fit: contain;
+    font-family: 'object-fit: contain;';
+}
+
+
+/** Helpers **/
+
+.vertical-center {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+
+
+/* Videos */
+.embed-responsive { position: relative; width: 100%; padding-bottom: 56.25%; /* 16:9 */ height: 0; }
+.embed-responsive iframe { position: absolute; top: 0; left: 0; width: 100% !important; height: 100% !important; }
+
+
+/**  Loading  **/
+#load-more-posts {
+    margin: 0 auto;
+}
+
+#load-more-wrap {
+    position: relative;
+    margin: 1.125em auto;
+    width: 100%;
+}
+
+#load-more-wrap.loading {
+    height: 4em;
+}
+
+
+.loader {
+    position: absolute;
+    left: calc(50% - 1.5em);
+    top: calc(50% - 1.5em);
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    border: 0.5rem solid rgba(72, 72, 72, 0.2);
+    border-top-color: #868686;
+    -webkit-animation: spin 1s infinite linear;
+          animation: spin 1s infinite linear;
+}
+
+.load-more-posts-error {
+    display: none;
+    text-align: center;
+    margin: 1.125em;
+}
+
+.load-more-posts-error p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.125em;
+    color: $error_red;
+}
+
+.load-more-posts-error.show {
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"]{
+    padding: 0.125em 0.25em;
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 62em) {  /** 992px **/
+
+    /**  Loading  **/
+
+    #load-more-wrap {
+        margin: 2.25em auto;
+    }
+
+}

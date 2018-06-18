@@ -1,0 +1,39 @@
+/** Buttons **/
+button,
+.btn {
+    font-size: 1.125em;
+    display: block;
+    color: #fff;
+    line-height: 3em;
+    border: 0;
+    font-weight: 600;
+    text-align: right;
+    margin-top: 0.5em;
+    padding: 0.125em 1em;
+    background-color: #868686;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+}
+
+button:before,
+.btn:before,
+[type=submit]:before {
+    content: " ";
+}
+
+button:hover,
+button:focus,
+.btn:hover,
+.btn:focus {
+    background-color: #5d5d5d;
+}
+
+.btn.disabled {
+    background-color: #b3b3b3;
+    cursor: not-allowed;
+}
+
+button.fancybox-close-small:hover {
+    background-color: transparent;
+}

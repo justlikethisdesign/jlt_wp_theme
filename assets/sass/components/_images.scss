@@ -1,0 +1,7 @@
+// Lazyloader
+// https://github.com/verlok/lazyload#user-content-dealing-with-microsoft-edge-problems
+img[data-src],
+img[data-srcset] {
+    display: block;
+    min-height: 1px;
+}

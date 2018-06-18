@@ -1,0 +1,23 @@
+#colophon {
+    position: relative;
+    width: 100%;
+    
+    p {
+        font-size: 0.8em;
+    }
+
+    p, a {
+        color: #c7c7c7;
+        text-decoration: none;
+    }
+    
+    .copyright,
+    .custom {
+        display: inline-block;
+    }
+    
+    .custom {
+        margin: 0 1em 0 0;
+    }
+    
+}
