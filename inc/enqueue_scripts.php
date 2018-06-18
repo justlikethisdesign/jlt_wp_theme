@@ -155,8 +155,8 @@ function enqueue_scripts_header_inline_css(){
     }
 
     //Set the CSS directory for this theme
-    $CSS_theme_dir           = get_stylesheet_directory_uri() . '/assets/sass/';
-    $CSS_direct_path         = get_stylesheet_directory() . '/assets/sass/';
+    $CSS_theme_dir           = get_stylesheet_directory_uri() . '/assets/css/';
+    $CSS_direct_path         = get_stylesheet_directory() . '/assets/css/';
 
 
     /**
@@ -199,8 +199,8 @@ function jlt_deferred_css_styles() {
     }
 
     //Set the CSS directory for this theme
-    $CSS_theme_dir           = get_stylesheet_directory_uri() . '/assets/sass/';
-    $CSS_direct_path         = get_stylesheet_directory() . '/assets/sass/';
+    $CSS_theme_dir           = get_stylesheet_directory_uri() . '/assets/css/';
+    $CSS_direct_path         = get_stylesheet_directory() . '/assets/css/';
 
     if ( $debug ){
 
