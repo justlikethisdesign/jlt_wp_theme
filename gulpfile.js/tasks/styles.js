@@ -36,9 +36,9 @@ var getPackageJSON = function() {
 
 gulp.task('css-critical:sass', function() {
     return processSASS( gulp.src( base + paths.css.critical ) )
-        .pipe( addsrc.prepend( paths.css.criticalnpm ) ) 
+        .pipe( addsrc.prepend( paths.css.criticalnpm ) )     
         .pipe( concat( 'critical.css' ) )
-        .pipe( gulp.dest( base + paths.css.folder ) );
+        .pipe( gulp.dest( base + paths.css.dest ) );
 });
 
 
@@ -46,7 +46,7 @@ gulp.task('css-noncritical:sass', function() {
     return processSASS(  gulp.src( base + paths.css.noncritical ) )
         .pipe( addsrc.prepend( paths.css.noncriticalnpm ) )
         .pipe( concat( 'noncritical.css' ) )
-        .pipe( gulp.dest( base + paths.css.folder ) );
+        .pipe( gulp.dest( base + paths.css.dest ) );
 });
 
 
@@ -73,15 +73,15 @@ function processSASS( stream ){
 
 gulp.task('css:minify', function() {
     return gulp.src( [
-        base + paths.css.folder + '*.css',
-        '!' + base + paths.css.folder + '*.min.css'
+        base + paths.css.dest + '*.css',
+        '!' + base + paths.css.dest + '*.min.css'
     ])
         .pipe( rename( { suffix: '.min' } ) )
         .pipe( minifycss( {
           maxLineLen: 10
         }))
         .pipe( lineec() ) // Consistent Line Endings for non UNIX systems.
-        .pipe( gulp.dest( base + paths.css.folder ) )
+        .pipe( gulp.dest( base + paths.css.dest ) )
 });
 
 
