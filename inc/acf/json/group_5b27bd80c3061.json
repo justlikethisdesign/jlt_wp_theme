@@ -54,25 +54,6 @@
                     "prepend": "",
                     "append": "",
                     "maxlength": ""
-                },
-                {
-                    "key": "field_5b27bdc08c10b",
-                    "label": "Tagline",
-                    "name": "tagline",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
                 }
             ]
         },
@@ -506,5 +487,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1529340759
+    "modified": 1529345753
 }

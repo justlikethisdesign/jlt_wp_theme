@@ -1,11 +1,10 @@
 // Get critial fonts
-@import "https://fonts.googleapis.com/css?family=Roboto:300,400,500";
+@import "https://fonts.googleapis.com/css?family=Raleway:700|Open+San";
 
 // https://github.com/kyle-villeneuve/responsive_type
 
 // FONT STACK
-$font-stack: 'Roboto', Arial, sans-serif;
-
+$font-stack: 'Open San', Arial, sans-serif;
 
 // FONT WEIGHTS
 $regular: 400;
@@ -24,7 +23,7 @@ $heading-scale-ratio: 1.333;
 
 
 // LINE HEIGHTS
-$heading-line-height: 1.5;
+$heading-line-height: 1.125;
 $body-line-height: 1.666;
 
 
@@ -90,7 +89,9 @@ h1,h2,h3,h4 {
     line-height: $heading-line-height;
 }
 
-
+.center-text {
+    text-align: center !important;
+}
 
 
 blockquote {

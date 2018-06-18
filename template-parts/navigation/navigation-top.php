@@ -86,23 +86,8 @@
         <span></span>
         <span></span>
     </div>
-    
-    <?php
-
-    if ( get_theme_mod('jlt_header_search', true) ) {
-
-        get_search_form();
-
-    }
-
-    ?>
 
 </div>
 
 <!-- Adds an overlay to dim content -->
 <div id="overlay"><div class="push"></div></div>
-
-<!-- Grab blog tagline -->
-<?php if ( get_bloginfo( 'description' ) ){ ?>
-    <h2 id="site-description"<?php get_schema_semantics( 'site-description' ); ?>><?php echo get_bloginfo( 'description' ); ?></h2>
-<?php } ?>
