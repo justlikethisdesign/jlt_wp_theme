@@ -10,12 +10,6 @@
  * Here we include custom Customizer classes
  */ 
 
-include ( 'fonts/google_font_functions.php' );
-
-include ( 'fonts/google_font_selector.php' );
-
-include ( 'fonts/google_font_api_checker.php' );
-
 include ( 'social/social_media_list.php' );
 
 /**
@@ -49,9 +43,6 @@ function jlt_customize_register( $wp_customize ) {
     
     //Add footer settings
     include ( 'footer.php' );
-    
-    //Add font and theme colour options
-    include ( 'fonts_colours.php' );
     
     include ( 'social/register_social.php' );
     
