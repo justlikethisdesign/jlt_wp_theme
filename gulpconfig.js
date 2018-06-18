@@ -34,13 +34,13 @@ module.exports = {
             all:            'assets/sass/*.css',  // Path to main .css file
             watch:          'assets/sass/**/*.scss',
             criticalnpm: [
-                './node_modules/font-awesome/css/font-awesome.css',
                 './node_modules/normalize-css/normalize.css',
             ],
             noncriticalnpm: [
                 './node_modules/animate.css/animate.min.css',
                 './node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css'
             ],
+            dest:           'assets/css/', 
         },
         js: {
             name:       'app',
