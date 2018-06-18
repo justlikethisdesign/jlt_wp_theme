@@ -19,7 +19,7 @@ if( function_exists('acf_add_options_page') ) {
 
 //Set the Google Maps API key
 function my_acf_init() {
-	acf_update_setting('google_api_key', jlt_google_api_key());
+	acf_update_setting('google_api_key', get_theme_mod( 'jlt_google_api' ) );
 }
 add_action('acf/init', 'my_acf_init');
 
